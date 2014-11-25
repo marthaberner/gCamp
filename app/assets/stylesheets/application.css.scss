@@ -16,6 +16,9 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
 
+body {
+  margin-top: 5em;
+}
  .panel-height {
-   height: 125px;
+   min-height: 10em;
  }
