@@ -16,6 +16,12 @@
   </nav>
   <div class="container">
     <%= yield %>
+    <footer>
+      <hr>
+      <%= link_to "About", about_path  %> |
+      <%= link_to "Terms", "#" %> |
+      <%= link_to "FAQ", "#" %>
+    </footer>
   </div>
 </body>
 </html>
