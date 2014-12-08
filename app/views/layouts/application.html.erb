@@ -16,12 +16,13 @@
   </nav>
   <div class="container">
     <%= yield %>
-    <footer>
+  </div>
+
+    <footer class="navbar navbar-fixed-bottom container">
       <hr>
       <%= link_to "About", about_path  %> |
-      <%= link_to "Terms", "#" %> |
+      <%= link_to "Terms", terms_path %> |
       <%= link_to "FAQ", "#" %>
     </footer>
-  </div>
 </body>
 </html>

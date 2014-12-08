@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   get '/faq' => 'faq#index'
   get '/about' => 'pages#about', as: 'about'
+  get '/terms' => 'pages#terms', as: 'terms'
 
 
 end
