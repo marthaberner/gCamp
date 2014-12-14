@@ -23,3 +23,18 @@ Faq.create(
   new features and awesome functionality. It's going to blow your mind.
   Organization is only (well, will only) be a click away. Amazing!"
 )
+
+Quote.create(
+  phrase: "Failure is not an option. Everyone has to succeed",
+  author: "Arnold Schwarzenegger"
+)
+
+Quote.create(
+  phrase: "Your time is limited, so don't waste it living someone else's life.",
+  author: "Steve Jobs"
+)
+
+Quote.create(
+  phrase: "Better Ingredients. Better Pizza",
+  author: "Papa John"
+)
