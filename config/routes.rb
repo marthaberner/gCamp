@@ -6,6 +6,6 @@ Rails.application.routes.draw do
   get '/about' => 'pages#about', as: 'about'
   get '/terms' => 'pages#terms', as: 'terms'
 
-
+  resources :tasks
 
 end
