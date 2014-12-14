@@ -11,10 +11,14 @@ class TasksController < ApplicationController
   def create
     @task = Task.create(task_params)
     if @task.save
-      redirect_to tasks_path, notice: "Task was successfully created"
+      redirect_to @task, notice: "Task was successfully created"
     else
       render :new
     end
+  end
+
+  def show
+    @task = Task.find(params[:id])
   end
 
   private
