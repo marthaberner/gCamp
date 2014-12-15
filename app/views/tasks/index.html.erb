@@ -8,7 +8,10 @@ class: "btn btn-primary pull-right" %></h1>
         Description
       </th>
       <th>
-        Due
+        Due Date
+      </th>
+      <th>
+        &nbsp;
       </th>
     </tr>
   </thead>
@@ -21,8 +24,11 @@ class: "btn btn-primary pull-right" %></h1>
       <td>
         <%= task.due_date.strftime("%m/%d/%Y") %>
       </td>
-      <td>
+      <td class="text-right">
         <%= link_to "Show", task, class: "btn btn-success" %>
+        <%= link_to "Edit", edit_task_path(task), class: "btn btn-info" %>
+        <%= link_to "Delete", task, method: :delete, data: {confirm: "Are you sure?"},
+         class: "btn btn-danger" %>
       </td>
     </tr>
     <% end %>
